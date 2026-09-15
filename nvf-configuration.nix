@@ -1,6 +1,11 @@
 {pkgs, lib, ...}:
+
 {
   vim = {
+        ui.borders.globalStyle = "solid";
+        git.enable = true;
+        minimap.minimap-vim.enable = true;
+        clipboard.providers.xclip.enable = true;
         options = {
           termguicolors = true;
           tabstop = 4;
@@ -14,6 +19,7 @@
     };
     tabline.nvimBufferline = {
         enable = true;
+        setupOpts.options.always_show_bufferline = false;
     };
     globals.mapleader = " ";
     filetree.neo-tree = {
@@ -30,6 +36,7 @@
                 };
     terminal = {
         toggleterm = {
+                lazygit.enable = true;
                 enable = true;
                 mappings.open = "<A-h>";
                 };
@@ -61,4 +68,8 @@
   languages = (import ./languages/languages.nix);
   keymaps = (import ./keymap.nix);
   };
+
+  mnw.initLua = ''
+vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+    '';
 }
