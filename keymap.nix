@@ -69,7 +69,7 @@
   {
     key = "<leader>x";
     mode = "n";
-    action = "<cmd>bnext<bar>bd#<CR>";
+    action = "<cmd>Bdelete<CR>";
     silent = true;
     desc = "Close buffer";
   }
