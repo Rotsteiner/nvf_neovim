@@ -53,6 +53,13 @@
     desc = "Go to definition";
   }
   {
+    key = "<leader>rh";
+    mode = "n";
+    action = "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<CR>";
+    silent = true;
+    desc = "Toggle inlay hints";
+  }
+  {
     key = "<Tab>";
     mode = "n";
     action = "<cmd>BufferLineCycleNext<CR>";
