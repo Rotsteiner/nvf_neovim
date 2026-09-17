@@ -6,6 +6,8 @@
         git.enable = true;
         minimap.minimap-vim.enable = true;
         clipboard.providers.xclip.enable = true;
+        clipboard.enable = true;
+        clipboard.registers = "unnamedplus";
         options = {
           termguicolors = true;
           tabstop = 4;
