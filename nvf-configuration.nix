@@ -12,9 +12,6 @@
           termguicolors = true;
           tabstop = 4;
           shiftwidth = 4;
-          softtabstop = 4;
-          expandtab = true;
-          timeout = false;
         };
     binds.whichKey = {
         enable = true;
