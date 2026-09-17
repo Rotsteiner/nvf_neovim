@@ -58,8 +58,7 @@
    binds.cheatsheet.enable = true;
     theme = {
       enable = true;
-      name = "gruvbox";
-      style = "dark";
+      name = "dracula";
     };
   statusline.lualine.enable = true;
   telescope.enable = true;
