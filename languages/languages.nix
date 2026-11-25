@@ -4,5 +4,6 @@
     clang = (import ./clang.nix);
     nix = (import ./nix.nix);
     tex = (import ./tex.nix);
+    lua = (import ./lua.nix);
     
   }
